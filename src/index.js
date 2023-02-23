@@ -1,3 +1,7 @@
-import './style.css'
+import './style.css';
+import createHeader from './pages/header.js';
+import createHome from './pages/home.js';
 
-console.log('test');
+document.body.appendChild(createHeader());
+
+document.body.appendChild(createHome());
