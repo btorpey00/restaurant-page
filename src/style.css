@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'CarterOne';
+    src: url('./CarterOne-Regular.ttf') format('tff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
 :root {
     --header-bg: rgba(0, 0, 0, 0.75);
     --header-text: rgb(255, 140, 140);
@@ -8,6 +15,7 @@
 }
 
 body {
+    font-family: 'CarterOne', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(images/background.jpg);
     background-size: cover;
     background-color: black;
@@ -88,4 +96,36 @@ body {
 }
 .home-header {
     font-size: 4rem;
+}
+
+.menu {
+    /* max-width: 80vw; */
+    /* background-color: var(--content-bg); */
+    color: var(--content-text);
+}
+
+.menu-title {
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: var(--content-bg);
+    color: var(--content-header);
+}
+
+.menu-item {
+    background-color: var(--content-bg);
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-item img {
+    max-width: 250px;
+    /* border: 2px solid var(--content-text); */
+    border-radius: 10%;
+}
+
+.menu-item-title {
+    color: var(--content-header);
+    font-size: 1.5rem;
+    font-weight: bold;
 }
