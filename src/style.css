@@ -62,23 +62,30 @@ body {
     scale: 1.1;
 }
 
-.home {
+.content {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     position: relative;
     top: 50vh;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     background-color: var(--content-bg);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--content-text);
     padding: 2rem;
 }
 
-.home-header {
-    font-size: 4rem;
+.content-header {
+    font-size: 3rem;
     font-weight: bold;
     color: var(--content-header);
+}
+
+.home-text{
+    font-size: 2rem;
+}
+.home-header {
+    font-size: 4rem;
 }
