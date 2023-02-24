@@ -36,11 +36,15 @@ export default function createMenu (){
     menuTitle.innerText = 'Menu';
     menuTitle.className='menu-title';
     menu.appendChild(menuTitle);
+
+    const menuContainer = document.createElement('div');
+    menuContainer.className = 'menu-container';
+    menu.appendChild(menuContainer);
     
     for (let i = 0; i < menuItems.length; i++) {
         const itemContainer = document.createElement('div');
         itemContainer.className = 'menu-item';
-        menu.appendChild(itemContainer);
+        menuContainer.appendChild(itemContainer);
 
         const itemPic = document.createElement('img');
         itemPic.src = menuItems[i].picture;
